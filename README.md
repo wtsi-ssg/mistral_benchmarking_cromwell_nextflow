@@ -22,11 +22,11 @@ This repository provides a detailed file operations comparison between Cromwell,
 1. There were total 5 (4 workflow + 1 native gatk) runs given on 5 different m1.xlarge OpenStack hosts to be run in parallel.
 2. Input data was copied to local disk of each host. 
 3. Details of 5 runs :
-	a. Host1 : Cromwell running GATK within a Singularity Container
-	b. Host2 : Nextflow running GATK within a Singularity Container
-	c. Host3 : Cromwell running GATK natively
-	d. Host4 : Nextflow running GATK natively
-	e. Host5 : GATK running natively
+	1. Host1 : Cromwell running GATK within a Singularity Container
+	2. Host2 : Nextflow running GATK within a Singularity Container
+	3. Host3 : Cromwell running GATK natively
+	4. Host4 : Nextflow running GATK natively
+	5. Host5 : GATK running natively
 	
 ## How to Run
 ```
