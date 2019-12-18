@@ -27,6 +27,5 @@ process 'HaplotypeCaller' {
     """
         ${gatk_path} --java-options "-Dsamjdk.use_async_io_read_samtools=true -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false" HaplotypeCaller -R $ref_fasta --pairHMM AVX_LOGLESS_CACHING_OMP --native-pair-hmm-threads 8 -I $input_bam -O ${params.sampleName}.raw.indels.snps.vcf
 
-        ${gatk_path} --java-options "-Dsamjdk.use_async_io_read_samtools=true -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false" HaplotypeCaller -ERC GVCF -R $ref_fasta --pairHMM AVX_LOGLESS_CACHING_OMP --native-pair-hmm-threads 8 -I $input_bam -O ${params.sampleName}.raw.indels.snps.g.vcf
     """
 }
