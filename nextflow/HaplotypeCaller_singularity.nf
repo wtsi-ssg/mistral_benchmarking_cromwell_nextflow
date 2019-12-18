@@ -22,7 +22,7 @@ process 'HaplotypeCaller' {
         file input_bam_index from input_bam_index_file
 
     output:
-        set file("${params.sampleName}.raw.indels.snps.vcf"), file("${params.sampleName}.raw.indels.snps.g.vcf") into haplot_ch
+        set file("${params.sampleName}.raw.indels.snps.vcf") into haplot_ch
 
     script:
     """ 
