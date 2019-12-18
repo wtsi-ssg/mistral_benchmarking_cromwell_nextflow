@@ -1,0 +1,10 @@
+{
+  "HaplotypeCallerGvcf_GATK4.ref_fasta": "/home/ubuntu/hs38DH.fa",
+  "HaplotypeCallerGvcf_GATK4.input_bam": "/home/ubuntu/HG00101_align.bam",
+  "HaplotypeCallerGvcf_GATK4.sampleName": "HG00101",
+  "HaplotypeCallerGvcf_GATK4.ref_fasta_index": "/home/ubuntu/hs38DH.fa.fai",
+  "HaplotypeCallerGvcf_GATK4.ref_dict": "/home/ubuntu/hs38DH.dict",
+  "HaplotypeCallerGvcf_GATK4.input_bam_index": "/home/ubuntu/HG00101_align.bam.bai",
+  "HaplotypeCallerGvcf_GATK4.singularity_image": "/home/ubuntu/gatk.img",
+  "HaplotypeCallerGvcf_GATK4.singularity_mount": "/home/ubuntu"
+}
