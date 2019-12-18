@@ -49,18 +49,9 @@ task HaplotypeCaller {
       -I ${input_bam} \
       -O ${sampleName}.raw.indels.snps.vcf ;
     
-    ${gatk_path} --java-options "-Dsamjdk.use_async_io_read_samtools=true -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Xmx${command_mem_gb}G ${java_opt}" \
-      HaplotypeCaller \
-      -ERC GVCF \
-      -R ${ref_fasta} \
-      --pairHMM AVX_LOGLESS_CACHING_OMP \
-      --native-pair-hmm-threads 8 \
-      -I ${input_bam} \
-      -O ${sampleName}.raw.indels.snps.g.vcf \
   >>>
 
   output {
     File rawVCF = "${sampleName}.raw.indels.snps.vcf"
-    File rawGVCF = "${sampleName}.raw.indels.snps.g.vcf"
   }
 }
