@@ -32,3 +32,7 @@ This repository provides a detailed file operations comparison between Cromwell,
 ```
 Please go through README.md and workflow files under each subdirectory (cromwell, nextflow, gatk).
 ```
+## Results
+```
+https://github.com/wtsi-ssg/mistral_benchmarking_cromwell_nextflow/blob/master/Mistral_Cromwell_Nextflow_m1xlarge.pptx
+```
