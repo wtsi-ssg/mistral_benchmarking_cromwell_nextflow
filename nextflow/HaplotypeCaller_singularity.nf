@@ -26,7 +26,7 @@ process 'HaplotypeCaller' {
 
     script:
     """ 
-        ${gatk_path} --java-options "-Dsamjdk.use_async_io_read_samtools=true -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false" HaplotypeCaller -R $ref_fasta --pairHMM AVX_LOGLESS_CACHING_OMP --native-pair-hmm-threads 8 -I $input_bam -O ${params.sampleName}.raw.indels.snps.vcf
+        /home/ubuntu/mistral_2.13.4_RC5_x86_64/mistral_launch.sh ${gatk_path} --java-options "-Dsamjdk.use_async_io_read_samtools=true -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false" HaplotypeCaller -R $ref_fasta --pairHMM AVX_LOGLESS_CACHING_OMP --native-pair-hmm-threads 8 -I $input_bam -O ${params.sampleName}.raw.indels.snps.vcf
 
     """
 }
