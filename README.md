@@ -15,7 +15,7 @@ This repository provides a detailed file operations comparison between Cromwell,
 - Input Data : 
 	- BAM file : HG00101_align.bam (79G)
 	- Reference file : hs38DH.fa
-- GATK Singularity Container (gatk.img)
+- GATK Singularity Container (gatk.img)(https://ac55bkt2.cog.sanger.ac.uk/public/gatk.img)
 
 
 ## Setup
